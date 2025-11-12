@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 130 | Personal Homepage</title>
+    <title>WDD 130 | Victor Ruiz Bello</title>
+    <meta name="description" content="WDD 130 Home Page for Victor Ruiz Bello. Learning web fundamentals at BYU-Idaho.">
+    <meta name="author" content="Victor Ruiz Bello">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-    <h1>Welcome to WDD 130.</h1>
-    <p>This page will become your homepage for the course. You will remove this text and replace it with your own personal details.</p>
 
-    <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple.">
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="wwr/">Rafting Website</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>WDD 130</h1>
+
+        <img src="images/profile.jpg" alt="Profile photo of Victor Ruiz Bello">
+
+        <p>
+            Hi! I’m Victor Ruiz Bello. I’m studying web development in WDD 130 at BYU-Idaho.
+            I love learning how to build clean, organized, and responsive websites using HTML and CSS.
+            This site will host all my weekly projects for the course.
+        </p>
+    </main>
+
+    <aside>
+        <h2>Temple Highlight</h2>
+        <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple.">
+    </aside>
+
+    <footer>
+        <p>© <span id="year"></span> Victor Ruiz Bello</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
 </body>
+
 </html>
