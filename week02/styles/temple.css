@@ -1,0 +1,84 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #111;
+  background: #f0f0f0;
+  line-height: 1.45;
+}
+
+.site-header,
+.site-footer {
+  background: #2f2f2f;
+  color: #fff;
+}
+.site-header p,
+.site-footer p {
+  margin: 0;
+  padding: 14px 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(28px, 4vw, 42px);
+  margin: 10px 0 18px;
+  letter-spacing: 0.3px;
+}
+
+.hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 720px;          
+  margin: 0 auto 24px;
+  border-radius: 6px;
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.25),
+    0 2px 8px rgba(0,0,0,.20);
+}
+
+.card {
+  background: #e6e6e6;
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin: 18px 0;
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.18),
+    0 1px 3px rgba(0,0,0,.12);
+}
+
+.card h2 {
+  font-size: clamp(20px, 2.6vw, 26px);
+  margin: 0 0 10px;
+  border-bottom: 2px solid #6a6a6a;
+  padding-bottom: 6px;
+}
+
+.card ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+.card li { margin: 6px 0; }
+
+.note {
+  margin-top: 10px;
+}
+.note a {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
+a:focus { outline: 3px solid #99c2ff; outline-offset: 2px; }
+
+@media (max-width: 420px) {
+  .site-header p, .site-footer p { padding: 12px; }
+  .container { padding: 20px 12px 32px; }
+}
